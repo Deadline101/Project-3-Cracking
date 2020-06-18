@@ -44,6 +44,7 @@ public:
         return in;
     }
     friend ostream &operator << (ostream &out, KeyGen &key) {
+        cout << "KEY: ";
         if (key.sign == 1) {
             out << "-";
         }
